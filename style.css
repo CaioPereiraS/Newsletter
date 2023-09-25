@@ -1,0 +1,12 @@
+.popup{
+    width: 200px;
+    height: 200px;
+    background-color: #ff0000;
+    color: #9b0e0e;
+    display: none;
+
+}
+.popup.active{
+
+    background-color: white;
+}
