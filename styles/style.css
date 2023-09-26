@@ -1,4 +1,5 @@
 /* Resetando as margens, paddings e caixas de todos os elementos */
+@import url(./popup.css);
 * {
   margin: 0;
   padding: 0;
@@ -44,7 +45,7 @@ main {
   padding: 1rem 0rem 1rem 2.3rem;
 }
 
-.conteiner_formulario h1 {
+.texto_principal {
   font-size: 3.5rem;
   font-weight: 700;
   color: hsl(234, 29%, 20%);
@@ -89,6 +90,9 @@ main {
 .texto_critica {
   color: hsl(4, 100%, 67%);
 }
+.texto_critica_desligado {
+  display: none;
+}
 
 .formulario_envio_confirmacao input {
   width: 100%;
@@ -97,9 +101,15 @@ main {
   border: 1px solid hsl(234, 29%, 20%);
   padding: 0.5rem;
   margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.email_invalido {
+  color: hsl(4, 100%, 67%);
+  background-color: #ffe8e6;
+  border-color: hsl(4, 100%, 67%);
 }
 
-.formulario_envio_confirmacao button {
+.btn_confirmacao {
   width: 100%;
   height: 3.5rem;
   border-radius: 0.5rem;
@@ -112,7 +122,7 @@ main {
   transition: 0.3s;
 }
 
-.formulario_envio_confirmacao button:hover {
+.btn_confirmacao:hover {
   background: linear-gradient(90deg, hsl(347, 100%, 66%), hsl(13, 100%, 62%));
   box-shadow: hsl(4, 100%, 67%) 0px 6px 20px;
 }
@@ -134,27 +144,31 @@ main {
 }
 
 @media screen and (max-width: 900px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+  }
   main {
     flex-direction: column;
-    width: 100%;
-    height: 100%;
+    border-radius: 0rem;
+    margin: 0rem 1rem 1rem 1rem;
+    padding: 0;
+    grid-template-columns: 1fr;
+    width: 100vh;
+    max-width: 100vh;
+  }
+  .conteiner_formulario {
+    padding: 1rem;
     margin: 0;
-    padding: 0rem;
-    grid-template-columns:1fr;
-    grid-template-rows: 1fr 1fr;
   }
 
   .container_imagem_mobile {
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-  
   }
 
   .container_imagem_mobile img {
     display: block;
-    object-fit: contain;
-    
+    width: 100%;
+    object-fit: cover;
   }
 
   .container_imagem_desktop {
