@@ -33,12 +33,12 @@
           </ul>
         <div class="formulario_envio">
           <div class="formulario_envio_textos">
-            <label>Email address</label>
-            <label id="critica" class="texto_critica_desligado">Valid email required</label>
-          </div>
-          <div class="formulario_envio_confirmacao">
-            <input id="emailField" type="text" />
-            <button id="botao_validar" class="btn_confirmacao">Subscribe to monthly newsletter</button>
+            <div class="formulario_envio_confirmacao">
+              <label>Email address</label>
+              <label id="critica" class="texto_critica_desligado">Valid email required</label>
+              <input id="emailField" type="text" />
+              <button id="botao_validar" class="btn_confirmacao">Subscribe to monthly newsletter</button>
+            </div>
           </div>
         </div>
       </div>
@@ -48,7 +48,7 @@
     </main>
     <section id="popup" class="popup popup_desligado">
       <img src="./assets/images/icon-success.svg" alt="">
-      <h1 class="texto_principal">Thanks for subscribing!</h1>
+      <h2 class="texto_principal">Thanks for subscribing!</h1>
       <p>A confirmation email has been sent to <strong id="email_popup">caiopereira@gmail.com</strong>. Please open it and click the button inside to confirm your subscription</p>
       <button class="btn_confirmacao btn_popup" id="fechar_popup">Dimiss message</button>
     </section>

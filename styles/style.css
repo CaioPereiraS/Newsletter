@@ -89,11 +89,17 @@ main {
 
 .texto_critica {
   color: hsl(4, 100%, 67%);
+  align-self: start;
 }
 .texto_critica_desligado {
   display: none;
 }
+.formulario_envio_confirmacao{  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
+}
 .formulario_envio_confirmacao input {
   width: 100%;
   height: 3.5rem;
