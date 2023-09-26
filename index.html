@@ -3,20 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Popup</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <title>Frontend Mentor | Newsletter sign-up form with success message</title>
   </head>
   <body>
     <main>
-      <div class="conteudo">
-        <h1>Este é o conteudo</h1>
-        <input type="text" id="emailField" />
-        <button id="botao_validar">correção</button>
+      <div class="container_imagem_mobile">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
       </div>
-      <div class="popup" id="resposta">
-        <h1>Este é o o popup</h1>
-        <button id="fechar">correção</button>
+      <div class="conteiner_formulario">
+        <h1>Stay updated!</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          <ul>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="">
+              Product discovery and building what matters
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="">
+              Measuring to ensure updates are a success
+            </li>
+            <li>
+              <img src="./assets/images/icon-list.svg" alt="">
+              And much more!
+            </li>
+          </ul>
+        <div class="formulario_envio">
+          <div class="formulario_envio_textos">
+            <label>Email address</label>
+            <label class="texto_critica">Valid email required</label>
+          </div>
+          <div class="formulario_envio_confirmacao">
+            <input type="text" />
+            <button>Subscribe to monthly newsletter</button>
+          </div>
+        </div>
+      </div>
+      <div class="container_imagem_desktop">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" />
       </div>
     </main>
   </body>
