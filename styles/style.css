@@ -33,6 +33,7 @@ main {
   border-radius: 2rem;
   margin: 2rem;
   padding: 1.5rem;
+  column-gap: 1rem;
 }
 
 .conteiner_formulario {
@@ -41,31 +42,29 @@ main {
   grid-template-rows: 1fr;
   row-gap: 1.4rem;
   padding: 1rem 0rem 1rem 2.3rem;
-  
-  
 }
+
 .conteiner_formulario h1 {
   font-size: 3.5rem;
   font-weight: 700;
   color: hsl(234, 29%, 20%);
-  
 }
-.lista_beficios{
-  display: flex;
 
+.lista_beficios {
+  display: flex;
 }
+
 .conteiner_formulario ul {
   list-style: none;
-  
-  
 }
-.conteiner_formulario li{
+
+.conteiner_formulario li {
   margin-bottom: 0.8rem;
   display: flex;
   align-items: center;
-
 }
-.conteiner_formulario li img{
+
+.conteiner_formulario li img {
   margin-right: 0.9rem;
 }
 
@@ -75,7 +74,7 @@ main {
   justify-content: space-between;
 }
 
-.formulario_envio_textos{
+.formulario_envio_textos {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -86,8 +85,9 @@ main {
   font-weight: 700;
   margin-bottom: 1rem;
 }
-.texto_critica{
-  color:hsl(4, 100%, 67%) ;
+
+.texto_critica {
+  color: hsl(4, 100%, 67%);
 }
 
 .formulario_envio_confirmacao input {
@@ -97,14 +97,8 @@ main {
   border: 1px solid hsl(234, 29%, 20%);
   padding: 0.5rem;
   margin-bottom: 1rem;
-  justify-content: center;
 }
-/* .formulario_envio_confirmacao input {
-  color: hsl(4, 100%, 67%);
-  font-size: 1rem;
-  background-color: hsla(4, 100%, 67%, 0.295);
-  border-color: hsl(4, 100%, 67%);
-}*/ 
+
 .formulario_envio_confirmacao button {
   width: 100%;
   height: 3.5rem;
@@ -117,45 +111,50 @@ main {
   cursor: pointer;
   transition: 0.3s;
 }
+
 .formulario_envio_confirmacao button:hover {
   background: linear-gradient(90deg, hsl(347, 100%, 66%), hsl(13, 100%, 62%));
   box-shadow: hsl(4, 100%, 67%) 0px 6px 20px;
 }
 
 .container_imagem_desktop img {
-  object-fit: cover;
+  display: block;
+  object-fit: contain;
+  width: 100%;
 }
+
 .container_imagem_desktop {
   display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .container_imagem_mobile {
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   main {
     flex-direction: column;
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0rem;
-    grid-template-columns: 1fr;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .container_imagem_mobile {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
+    align-items: flex-start;
+  
   }
+
   .container_imagem_mobile img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    display: block;
+    object-fit: contain;
+    
   }
 
   .container_imagem_desktop {
